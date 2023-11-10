@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="portfoliostyle.css"/>
+    <title>Wayne | Portfolio</title>
+    <script src="https://kit.fontawesome.com/7548843752.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+          <nav>
+            <svg
+              version="1.1"
+              id="Layer_1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              x="0px"
+              y="0px"
+              viewBox="0 0 100 100"
+              style="enable-background:new 0 0 100 100; width: 55px; height: 55px;"
+              xml:space="preserve"
+            >
+              <style type="text/css">
+                .st0 {
+                  fill: #131313;
+                }
+              </style>
+              <g>
+                <g id="Logo" class="logo">
+                  <polygon class="st0" points="44.28,29.65 46.88,30.75 48.53,35.14 47.46,38.11" />
+                  <polygon class="st0" points="55.7,29.65 53.1,30.75 51.45,35.14 52.52,38.11" />
+                  <polygon class="st0" points="48.96,31.67 49.94,32.22 51.01,31.67 49.94,34.52" />
+                  <path class="st0" d="M29.46,12.85"/>
+                </g>
+                <g>
+                  <polygon class="st0" points="19.29,32.57 27.71,32.57 38.84,56.16 50.09,33.05 53.47,40.59 64.81,17.6 65.77,18.07 38.84,73.96 " />
+                  <polygon class="st0" points="80.94,32.46 72.33,32.46 60.99,56.16 56.2,45.78 35.83,87.29 37.06,87.29 52.1,56.04 60.85,73.96 " />
+                </g>
+              </g>
+            </svg>
+            <div class="nav-content">
+              <ul id="menu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+              </ul>
+              <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </div>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+          </nav>
+        </div>
+      </div>
+        <div class="copyright">
+            <p>Copyright © Wayne Koh</p>
+        </div>
+    </div>
+
+    <div id="portfolio">
+        <div class="container">
+          <h1 class="sub-title">My Works</h1>
+          <div class="portfolio-list">
+    
+            <div class="work">
+                <img src="assets/img/japan_street.jpg">
+                <div class="layer">
+                  <h3>Japan's Street</h3>
+                  <p>A picture of text "Japan's Street" on the side of a street which blends well with it's environment...</p>
+                </div>
+              </div>
+    
+              <div class="work">
+                <img src="assets/img/yukata.jpg">
+                <div class="layer">
+                  <h3>Yukata</h3>
+                  <p>One of my favourite artwork, as the text "Yukata" blends in well with the photo of three women wearing yukata which I have edited too. The text is also readable and fades at some spots too...</p>
+                </div>
+              </div>
+    
+              <div class="work">
+                <img src="assets/img/run.jpg">
+                <div class="layer">
+                  <h3>Run</h3>
+                  <p>Image of the "Run" text blending in together with the track's direction..</p>
+                </div>
+              </div>
+
+              <div class="work">
+                <img src="assets/img/outfit.jpg">
+                <div class="layer">
+                  <h3>Outfit</h3>
+                  <p>
+                    A picture of a person standing, with the Outfit text being faded out where the person is standing, so that the text is readable and appealing.</p>
+                </div>
+              </div>
+
+              <div class="work">
+                <img src="assets/img/macarons.jpg">
+                <div class="layer">
+                  <h3>Macarons</h3>
+                  <p>A Product Advertisement poster which I did for a macaron's store named SweetSpot. Photoshop and Illustrator was used in this poster.</p>
+                </div>
+              </div>
+
+              <div class="work">
+                <img src="assets/img/poster.jpg">
+                <div class="layer">
+                  <h3>Poster</h3>
+                  <p>A Poster made in Adobe Illustrator for my company's brand advertisement. My company is based on music-related items, which is why I focused more on the beats</p>
+                </div>
+              </div>
+            </div>
+            <a href="index.html" class="btn">Back</a>
+          </div>
+          </div>
+        </div>
+      </div>
+
+    <!-- Script for menu for smaller screens -->
+    <script>
+        var sidemenu = document.getElementById("menu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>

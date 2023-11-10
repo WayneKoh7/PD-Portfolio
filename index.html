@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css"/>
+    <title>Wayne | Portfolio</title>
+    <script src="https://kit.fontawesome.com/7548843752.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+
+    <div id="header">
+      <div class="container">
+        <nav>
+          <svg
+            version="1.1"
+            id="Layer_1"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            x="0px"
+            y="0px"
+            viewBox="0 0 100 100"
+            style="enable-background:new 0 0 100 100; width: 55px; height: 55px;"
+            xml:space="preserve"
+          >
+            <style type="text/css">
+              .st0 {
+                fill: #131313;
+              }
+            </style>
+            <g>
+              <g id="Logo" class="logo">
+                <polygon class="st0" points="44.28,29.65 46.88,30.75 48.53,35.14 47.46,38.11" />
+                <polygon class="st0" points="55.7,29.65 53.1,30.75 51.45,35.14 52.52,38.11" />
+                <polygon class="st0" points="48.96,31.67 49.94,32.22 51.01,31.67 49.94,34.52" />
+                <path class="st0" d="M29.46,12.85"/>
+              </g>
+              <g>
+                <polygon class="st0" points="19.29,32.57 27.71,32.57 38.84,56.16 50.09,33.05 53.47,40.59 64.81,17.6 65.77,18.07 38.84,73.96 " />
+                <polygon class="st0" points="80.94,32.46 72.33,32.46 60.99,56.16 56.2,45.78 35.83,87.29 37.06,87.29 52.1,56.04 60.85,73.96 " />
+              </g>
+            </g>
+          </svg>
+          <ul id="menu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+
+        <div class="header-text">
+          <h1>Hi, I'm Wayne Koh</h1>
+          <h3>Digital Designer</h3>
+          <li><a href="#about">GET STARTED</a></li>
+        </div>
+
+        </div>
+      </div>
+    </div>
+
+  <!--About Me Section Wayne-->
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="assets/img/wayne.jpg">
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1>
+          <p>I am currently a student currently in Republic Polytechnic 
+            taking my Diploma in Digital Design & Development. 
+            I have always been interested in design ever since I was young, 
+            which is why I've decided to take up this course. 
+            I aspire to be a Graphic Designer or a Software Developer/Engineer 
+            in the future.</p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+              <p class="tab-links " onclick="opentab('experience')">Experience</p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+              <p class="tab-links" onclick="opentab('language')">Language</p>
+            </div>
+
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>Adobe</span><br>Illustrator, Photoshop, XD</li>
+                <li><span>Web Design Application</span></li>
+                <li><span>User Experience</span></li>
+                <li><span>UI/UX Design</span></li>
+                <li><span>Coding Language:</span>
+                  <br>- Java
+                  <br>- Python
+                  <br>- HTML
+                  <br>- PHP
+                  <br>- Android Studio
+                  <br>- CSS</li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li><span>October 2023 - Current</span><br>Salesperson in Enspire</li>
+                <li><span>October 2023 - October 2023</span><br>Promoter for National Environment Agency</li>
+                <li><span>September 2021 - October 2021</span><br>Data Storage Management for Global Switch Data Center</li>
+                <li><span>September 2021 - September 2021</span><br>Banquet Server at Raffles Town Club</li>
+                <li><span>September 2021 - September 2021</span><br>Banquet Server at Four Seasons</li>
+                <li><span>January 2018 - Deecember 2018</span><br>McDonald's</li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="education">
+              <ul>
+                <li><span>Republic Polytechnic</span><br>Diploma in Digital Design (Current)</li>
+                <li><span>Hougang Secondary School</span><br>Atttained 6 GCE "N" Level Subjects Pass (2017-2020)</li>
+                <li><span>Hougang Primary School</span><br>Completed PSLE (2011-2016)</li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="language">
+              <ul>
+                <li><span>English</span><br>Native</li>
+                <li><span>Chinese</span><br>Native</li>
+                <li><span>Japanese</span><br>Intermediate</li>
+              </ul>
+            </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Portfolio Section Wayne-->
+  <div id="portfolio">
+    <div class="container">
+      <h1 class="sub-title">My Works</h1>
+      <div class="portfolio-list">
+
+          <div class="work">
+            <img src="assets/img/outfit.jpg">
+            <div class="layer">
+              <h3>Adobe Works</h3>
+              <p>Adobe Illustration works</p>
+              <a href="portfolio.html"><i class="fa-solid fa-up-right-from-square fa-beat-fade"></i></a>
+            </div>
+          </div>
+
+          <div class="work">
+            <img src="assets/img/wayne.jpg">
+            <div class="layer">
+              <h3>Websites</h3>
+              <p>Websites that I created using HTML, Java, and CSS</p>
+              <a href="portfolio.html"><i class="fa-solid fa-up-right-from-square fa-beat-fade"></i></a>
+            </div>
+          </div>
+
+          <div class="work">
+            <img src="assets/img/sakura_stop.jpg">
+            <div class="layer">
+              <h3>Photos</h3>
+              <p>Photos that I have took</p>
+              <a href="portfolio.html"><i class="fa-solid fa-up-right-from-square fa-beat-fade"></i></a>
+            </div>
+          </div>
+
+      </div>
+      <a href="portfolio.html" class="btn">See more</a>
+    </div>
+  </div>
+
+  <!---Contact me-- -->
+<div id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="contact-left">
+        <h1 class="sub-title">Contact Me</h1>
+        <p><i class="fa-solid fa-envelope fa-fade"></i> email@example.com</p>
+        <p><i class="fa-solid fa-phone fa-fade"></i> +65 1234 5678</p>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+          <a href="https://twitter.com/home"><i class="fa-brands fa-square-x-twitter"></i></a>
+          <a href="https://www.instagram.com/weiheng_0818"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/waynekohh/"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+        <!-- Attach Resume file here (a href="assets/img/my-resume.pdf" download class = "btn btnResume") -->
+        <a href="" class="btn btnResume">Download Resume</a>
+      </div>
+      <div class="contact-right">
+        <form>
+          <input type="text" name="Name" placeholder="Your Name" required>
+          <input type="email" name="email" placeholder="Your Email" required>
+          <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+          <button type="submit" class="btn">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="copyright">
+    <p>Copyright © Wayne Koh</p>
+  </div>
+</div>
+
+
+<!-- Script for about me -->
+<script>
+
+var tablinks = document.getElementsByClassName("tab-links");
+var tabcontents = document.getElementsByClassName("tab-contents");
+
+function opentab(tabname){
+  for(tablink of tablinks){
+    tablink.classList.remove("active-link");
+  }
+  for(tabcontent of tabcontents){
+    tabcontent.classList.remove("active-tab");
+  }
+  event.currentTarget.classList.add("active-link");
+  document.getElementById(tabname).classList.add("active-tab");
+}
+
+</script>
+
+<!-- Script for menu for smaller screens -->
+<script>
+  var sidemenu = document.getElementById("menu");
+
+  function openmenu(){
+    sidemenu.style.right = "0";
+  }
+
+  function closemenu(){
+    sidemenu.style.right = "-200px";
+  }
+
+</script>
+
+  </body>
+</html>
