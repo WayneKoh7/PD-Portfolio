@@ -147,6 +147,7 @@ ul li a:hover {
 /* ---About Me--- */
 #about {
   padding: 80px 0;
+  padding-bottom: 40px;
   color: #515151;
 }
 
@@ -344,7 +345,8 @@ ul li a:hover {
 
 /* ------------Portfolio---------- */
 #portfolio{
-  padding: 50px 0; /*50 padding top bottom left right 0*/
+  padding: 80px 0; /*80 padding top bottom left right 0*/
+  padding-top: 300px;
 }
 
 .portfolio-list{
