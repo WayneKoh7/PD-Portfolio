@@ -147,7 +147,8 @@ ul li a:hover {
 /* ---About Me--- */
 #about {
   padding: 80px 0;
-  padding-bottom: 40px;
+  padding-top: 100px;
+  padding-bottom: 140px;
   color: #515151;
 }
 
@@ -346,7 +347,7 @@ ul li a:hover {
 /* ------------Portfolio---------- */
 #portfolio{
   padding: 80px 0; /*80 padding top bottom left right 0*/
-  padding-top: 300px;
+  padding-top: 70px;
 }
 
 .portfolio-list{
@@ -512,15 +513,37 @@ form .btnResume{
   margin-top: 20px;
 }
 
+
+
+
+
+
 /* CSS For Smaller Screens */
 nav .fa-solid{
   display: none;
 }
 
+
 @media only screen and (max-width: 600px){
   /* #header{
     background-image: url();
   } */
+
+  #about {
+    padding: 80px 0;
+    padding-top: 50px;
+    padding-bottom: 140px;
+    color: #515151;
+  }
+
+  #portfolio{
+    padding: 80px 0;
+    padding-top: 30px;
+  }
+
+  #contact{
+    padding-top: 25px;
+  }
 
   .header-text h3 {
     font-size: 30px;
