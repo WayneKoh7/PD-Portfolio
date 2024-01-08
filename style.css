@@ -280,7 +280,8 @@ ul li a:hover {
   animation: progress 2s ease-in-out forwards;
 }
 
-/* !important forces the application of the style (not using it) */
+/* "!important" forces the application of the style (not using it in this case) */
+
 .tab-contents .container .skill-box .skill-bar .skill-percentage.chinese {
   animation: progressChinese 2s ease-in-out forwards;
 }
@@ -392,8 +393,13 @@ ul li a:hover {
 }
 
 .layer h3{
-  font-weight: 500;
+  font-weight: 700;
   margin-bottom: 20px;
+  color: #fff;
+}
+
+.layer p{
+  color: #fff;
 }
 
 .layer a{
