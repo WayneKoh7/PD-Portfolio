@@ -93,7 +93,7 @@ ul li a:hover {
   font-size: 60px;
 }
 
-
+/* Digital Designer Animation */
 .header-text h3 {
   font-size: 50px;
   color: transparent;
@@ -522,13 +522,40 @@ nav .fa-solid{
     background-image: url();
   } */
 
+  .header-text h3 {
+    font-size: 30px;
+    color: transparent;
+    -webkit-text-stroke: .5px #fff;
+    background-image: linear-gradient(#ae58ff, #5ad0ff);
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-position: 500px;
+    animation: animateText 9s linear infinite;
+  }
+
+  @keyframes animateText {
+    0%, 95%, 100% {
+      background-position: -500px 0;
+    }
+    65%, 85% {
+      background-position: 0 0;
+    }
+  }
+
+  .header-text li {
+    margin-top: 30px;
+    font-size: 20px;
+    list-style: none;
+  }
+
   .header-text{
-    margin-top: 100%;
-    font-size: 16px;
+    margin-top: 80%;
+    font-size: 14px;
   }
 
   .header-text h1{
-    font-size: 30px;
+    font-size: 25px;
   }
 
   nav .fa-solid{
