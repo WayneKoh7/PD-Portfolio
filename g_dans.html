@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="extra.css"/>
+    <title>Wayne | Portfolio</title>
+    <script src="https://kit.fontawesome.com/7548843752.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+
+    <div id="header">
+      <div class="container">
+        <nav>
+          <svg
+            version="1.1"
+            id="Layer_1"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            x="0px"
+            y="0px"
+            viewBox="0 0 100 100"
+            style="enable-background:new 0 0 100 100; width: 55px; height: 55px;"
+            xml:space="preserve"
+            id="logo"
+          >
+            <style type="text/css">
+              .st0 {
+                fill: #131313;
+              }
+            </style>
+            <g>
+              <g id="Logo" class="logo">
+                <polygon class="st0" points="44.28,29.65 46.88,30.75 48.53,35.14 47.46,38.11" />
+                <polygon class="st0" points="55.7,29.65 53.1,30.75 51.45,35.14 52.52,38.11" />
+                <polygon class="st0" points="48.96,31.67 49.94,32.22 51.01,31.67 49.94,34.52" />
+                <path class="st0" d="M29.46,12.85"/>
+              </g>
+              <g>
+                <polygon class="st0" points="19.29,32.57 27.71,32.57 38.84,56.16 50.09,33.05 53.47,40.59 64.81,17.6 65.77,18.07 38.84,73.96 " />
+                <polygon class="st0" points="80.94,32.46 72.33,32.46 60.99,56.16 56.2,45.78 35.83,87.29 37.06,87.29 52.1,56.04 60.85,73.96 " />
+              </g>
+            </g>
+          </svg>
+          <ul id="menu">
+            <li><a href="index.html#header">Home</a></li>
+            <li><a href="index.html#about">About Me</a></li>
+            <li><a href="index.html#portfolio">Portfolio</a></li>
+            <li><a href="index.htmls#contact">Contact Me</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+
+        </div>
+      </div>
+    </div>
+
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="assets/img/dansposter.jpg">
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">Dans Poster</h1>
+          <br>
+          <h4>Description:</h4>
+          <br>In my event poster design, I have made it with the aim of my audiences getting to know the picture/what is going on behind it, which is when and where the event will be held, the timing of the events, featured dancers, and the event name.  
+            <br>
+          I have made the event name to be big on the header, so that when my audiences see it they will be able to understand what is going on. I have also made the featured dancers names to be bolded and big, as well as the dates as they are an important factor. 
+          <br><br>
+          I have added 3 pies with images of the dancers behind it, while the text will be acting as the 4th pie to cover up the blank space. I chose black as the dancers are mainly wearing black, which will give a nice flushed/clean look to it.  
+          <br>
+          I have also added a trial of smoke behind the pie/dancers as the background so that the background will not look plane, and the smoke is shooting straight up to the dancers so that the audience will be able to focus on it.
+          <br>
+          </p>
+
+        </div>
+      </div>
+    </div>
+    <a href="graphic.html" class="btn">Back</a>
+  </div>
+
+</script>
+
+<!-- Script for menu for smaller screens -->
+<script>
+  var sidemenu = document.getElementById("menu");
+
+  function openmenu(){
+    sidemenu.style.right = "0";
+  }
+
+  function closemenu(){
+    sidemenu.style.right = "-200px";
+  }
+
+</script>
+
+  </body>
+</html>

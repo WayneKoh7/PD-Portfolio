@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css"/>
+    <title>Wayne | Portfolio</title>
+    <script src="https://kit.fontawesome.com/7548843752.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+
+    <div id="header">
+      <div class="container">
+        <nav>
+          <svg
+            version="1.1"
+            id="Layer_1"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            x="0px"
+            y="0px"
+            viewBox="0 0 100 100"
+            style="enable-background:new 0 0 100 100; width: 55px; height: 55px;"
+            xml:space="preserve"
+            id="logo"
+          >
+            <style type="text/css">
+              .st0 {
+                fill: #131313;
+              }
+            </style>
+            <g>
+              <g id="Logo" class="logo">
+                <polygon class="st0" points="44.28,29.65 46.88,30.75 48.53,35.14 47.46,38.11" />
+                <polygon class="st0" points="55.7,29.65 53.1,30.75 51.45,35.14 52.52,38.11" />
+                <polygon class="st0" points="48.96,31.67 49.94,32.22 51.01,31.67 49.94,34.52" />
+                <path class="st0" d="M29.46,12.85"/>
+              </g>
+              <g>
+                <polygon class="st0" points="19.29,32.57 27.71,32.57 38.84,56.16 50.09,33.05 53.47,40.59 64.81,17.6 65.77,18.07 38.84,73.96 " />
+                <polygon class="st0" points="80.94,32.46 72.33,32.46 60.99,56.16 56.2,45.78 35.83,87.29 37.06,87.29 52.1,56.04 60.85,73.96 " />
+              </g>
+            </g>
+          </svg>
+          <ul id="menu">
+            <li><a href="index.html#header">Home</a></li>
+            <li><a href="index.html#about">About Me</a></li>
+            <li><a href="index.html#portfolio">Portfolio</a></li>
+            <li><a href="index.html#contact">Contact Me</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+
+  <!--Portfolio Section Wayne-->
+  <div id="portfolio">
+    <div class="container">
+      <h1 class="sub-title">VR Works</h1>
+      <div class="portfolio-list">
+
+          <div class="work">
+            <img src="assets/img/escaperoom.png">
+            <div class="layer">
+              <h3>Escape room</h3>
+              <p>Made with Unity</p>
+              <a href="v_escape.html"><i class="fa-solid fa-up-right-from-square fa-beat-fade"></i></a>
+            </div>
+          </div>
+
+          <div class="work">
+            <img src="assets/img/bomb.png">
+            <div class="layer">
+              <h3>Bomb Hunter</h3>
+              <p>Made with Unity</p>
+              <a href="v_bomb.html"><i class="fa-solid fa-up-right-from-square fa-beat-fade"></i></a>
+            </div>
+          </div>
+
+          <div class="work">
+            <img src="assets/img/eyemonster.jpg">
+            <div class="layer">
+              <h3>Eye Monster</h3>
+              <p>Made with Unity</p>
+              <a href="v_eye.html"><i class="fa-solid fa-up-right-from-square fa-beat-fade"></i></a>
+            </div>
+          </div>
+    </div>
+    <div class="btn-container">
+      <a href="index.html#portfolio" class="btn2">Back</a>
+      <a href="portfolio.html" class="btn2">Portfolio</a>
+    </div>
+  </div>
+
+</script>
+
+<!-- Script for menu for smaller screens -->
+<script>
+  var sidemenu = document.getElementById("menu");
+
+  function openmenu(){
+    sidemenu.style.right = "0";
+  }
+
+  function closemenu(){
+    sidemenu.style.right = "-200px";
+  }
+
+</script>
+
+  </body>
+</html>

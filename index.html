@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css"/>
+    <title>Wayne | Portfolio</title>
+    <script src="https://kit.fontawesome.com/7548843752.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+
+    <div id="header">
+      <div class="container">
+        <nav>
+          <svg
+            version="1.1"
+            id="Layer_1"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            x="0px"
+            y="0px"
+            viewBox="0 0 100 100"
+            style="enable-background:new 0 0 100 100; width: 55px; height: 55px;"
+            xml:space="preserve"
+            id="logo"
+          >
+            <style type="text/css">
+              .st0 {
+                fill: #131313;
+              }
+            </style>
+            <g>
+              <g id="Logo" class="logo">
+                <polygon class="st0" points="44.28,29.65 46.88,30.75 48.53,35.14 47.46,38.11" />
+                <polygon class="st0" points="55.7,29.65 53.1,30.75 51.45,35.14 52.52,38.11" />
+                <polygon class="st0" points="48.96,31.67 49.94,32.22 51.01,31.67 49.94,34.52" />
+                <path class="st0" d="M29.46,12.85"/>
+              </g>
+              <g>
+                <polygon class="st0" points="19.29,32.57 27.71,32.57 38.84,56.16 50.09,33.05 53.47,40.59 64.81,17.6 65.77,18.07 38.84,73.96 " />
+                <polygon class="st0" points="80.94,32.46 72.33,32.46 60.99,56.16 56.2,45.78 35.83,87.29 37.06,87.29 52.1,56.04 60.85,73.96 " />
+              </g>
+            </g>
+          </svg>
+          <ul id="menu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+
+        <div class="header-text">
+          <h1>Hi, I'm Wayne Koh</h1>
+          <h3>Digital Designer</h3>
+          <li><a href="#about">GET STARTED</a></li>
+        </div>
+
+        </div>
+      </div>
+    </div>
+
+  <!--About Me Section Wayne-->
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="assets/img/wayne.jpg">
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1>
+          <br>Currently, I'm a second/third year student pursuing a Diploma in Digital Design & Development in Republic Polytechnic.
+          Ever since my childhood, designing has been my passion and was the reason that aspired me to be a Graphic Designer 
+          or a Software Developer or Engineer. My portfolio features both technical and creative design projects, so please do take a look! 
+          I am eager and look forward to utilise my skills in an internship role and be a valuable member of a dynamic team!
+          </p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+              <p class="tab-links " onclick="opentab('experience')">Experience</p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+              <p class="tab-links" onclick="opentab('awards')">Awards</p>
+              <p class="tab-links" onclick="opentab('language')">Language</p>
+            </div>
+            <!-- Skills -->
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>Web Design Application</span>
+                  <br>- Adobe XD
+                  <br>- Adobe Illustrator
+                  <br>- Adobe Photoshop
+                  <br>- Adobe Lightroom
+                  <br>- Adobe Premiere Pro</li>
+                <li><span>Coding Language:</span>
+                  <br>- Java
+                  <br>- Python
+                  <br>- HTML
+                  <br>- PHP
+                  <br>- Android Studio
+                  <br>- CSS</li>
+                <li><span>User Experience</span></li>
+              </ul>
+            </div>
+            <!-- Experience -->
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li><span>December 2023 - Current</span><br>Student Ambassador for Advisors Alliance Group</li>
+                <li><span>October 2023 - Current</span><br>Salesperson in Enspire</li>
+                <li><span>October 2023 - October 2023</span><br>Promoter for National Environment Agency</li>
+                <li><span>September 2021 - October 2021</span><br>Data Storage Management for Global Switch Data Center</li>
+                <li><span>September 2021 - September 2021</span><br>Banquet Server at Raffles Town Club</li>
+                <li><span>September 2021 - September 2021</span><br>Banquet Server at Four Seasons</li>
+                <li><span>January 2018 - Deecember 2018</span><br>McDonald's at Waterway Point</li>
+              </ul>
+            </div>
+            <!-- Education -->
+            <div class="tab-contents" id="education">
+              <ul>
+                <li><span>Republic Polytechnic</span><br>Diploma in Digital Design (Current)</li>
+                <li><span>Hougang Secondary School</span><br>Atttained 6 GCE "N" Level Subjects Pass (2017-2020)</li>
+                <li><span>Hougang Primary School</span><br>Completed PSLE (2011-2016)</li>
+              </ul>
+            </div>
+            <!-- Awards -->
+            <div class="tab-contents" id="awards">
+              <ul>
+                <li><span>Edusave Certificate of Academic Achievement - 2023</span><br>Diploma in Digital Design & Development in Republic Polytechnic, for achieving good academic performance and demonstrating good conduct</li>
+                <li><span>Lee Foundation Bursary - 2023</span><br>Bursary Award</li>
+                <li><span>Edusave Good Progress Award - 2020</span><br>Top 10% of level and course in terms of improvement in academic performance, and have demonstrated good conduct</li>
+                <li><span>HS Young Innovator Award - 2020</span><br>HS Innovation Challenge</li>
+                <li><span>Certificate of Academic Achievement - 2019</span><br>Most Improved in Level</li>
+                <li><span>National Youth Achievement Award - 2018</span><br></li>
+                <li><span>Joint Tuition Award - 2017</span><br>In recognition of academic achievement at PSLE Level</li>
+                <li><span>Good Progress Award - 2014</span><br>For achieving good progress in Science at the Year End School Examination</li>
+                <li><span>Educational Gymnastics Course - 2011</span><br>Completing the Gymnastics Enrichment Course; Grade Obtained: A+</li>
+              </ul>
+            </div>
+            <!-- Language [Animated Bar]-->
+            <div class="tab-contents" id="language">
+              
+              <div class="container">
+
+                <div class="skill-box">
+                  <span class="title">English (Native)</span>
+                  <div class="skill-bar">
+                    <span class="skill-percentage english">
+                      <span class="tooltip">100%</span>
+                    </span>
+                  </div>
+                </div>
+                
+                <div class="skill-box">
+                  <span class="title">Chinese (Proficient)</span>
+                  <div class="skill-bar">
+                    <span class="skill-percentage chinese">
+                      <span class="tooltip">60%</span>
+                    </span>
+                  </div>
+                </div>
+                
+                <div class="skill-box">
+                  <span class="title">Japanese (Intermediate)</span>
+                  <div class="skill-bar">
+                    <span class="skill-percentage japanese">
+                      <span class="tooltip">20%</span>
+                    </span>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Portfolio Section Wayne-->
+  <div id="portfolio">
+    <div class="container">
+      <h1 class="sub-title">My Works</h1>
+      <div class="portfolio-list">
+
+          <div class="work">
+            <img src="assets/img/japan_street.jpg">
+            <div class="layer">
+              <h3>Graphic Designs</h3>
+              <p>Designed with Adobe</p>
+              <a href="graphic.html"><i class="fa-solid fa-up-right-from-square fa-beat-fade"></i></a>
+            </div>
+          </div>
+
+          <div class="work">
+            <img src="assets/img/movie.png">
+            <div class="layer">
+              <h3>Websites</h3>
+              <p>Websites that I have created from scratch</p>
+              <a href="website.html"><i class="fa-solid fa-up-right-from-square fa-beat-fade"></i></a>
+            </div>
+          </div>
+
+          <div class="work">
+            <img src="assets/img/escaperoom.png">
+            <div class="layer">
+              <h3>Virtual Reality</h3>
+              <p>VRs made in Unity</p>
+              <a href="virtual.html"><i class="fa-solid fa-up-right-from-square fa-beat-fade"></i></a>
+            </div>
+          </div>
+
+      </div>
+      <a href="portfolio.html" class="btn">See more</a>
+    </div>
+  </div>
+
+  <!---Contact me-- -->
+<div id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="contact-left">
+        <h1 class="sub-title">Contact Me</h1>
+        <p><i class="fa-solid fa-envelope fa-fade"></i> 22000210@myrp.edu.sg</p>
+        <p><i class="fa-solid fa-phone fa-fade"></i> +65 8805 3385</p>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+          <a href="https://twitter.com/home"><i class="fa-brands fa-square-x-twitter"></i></a>
+          <a href="https://www.instagram.com/weiheng_0818"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/waynekohh/"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+        <!-- Attach Resume file here (a href="assets/img/my-resume.pdf" download class = "btn btnResume") -->
+        <a href="" class="btn btnResume">Download Resume</a>
+      </div>
+      <div class="contact-right">
+        <form>
+          <input type="text" name="Name" placeholder="Your Name" required>
+          <input type="email" name="email" placeholder="Your Email" required>
+          <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+          <button type="submit" class="btn">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="copyright">
+    <p>Copyright © Wayne Koh</p>
+  </div>
+</div>
+
+
+<!-- Script for about me -->
+<script>
+
+var tablinks = document.getElementsByClassName("tab-links");
+var tabcontents = document.getElementsByClassName("tab-contents");
+
+function opentab(tabname){
+  for(tablink of tablinks){
+    tablink.classList.remove("active-link");
+  }
+  for(tabcontent of tabcontents){
+    tabcontent.classList.remove("active-tab");
+  }
+  event.currentTarget.classList.add("active-link");
+  document.getElementById(tabname).classList.add("active-tab");
+}
+
+</script>
+
+<!-- Script for menu for smaller screens -->
+<script>
+  var sidemenu = document.getElementById("menu");
+
+  function openmenu(){
+    sidemenu.style.right = "0";
+  }
+
+  function closemenu(){
+    sidemenu.style.right = "-200px";
+  }
+
+</script>
+
+  </body>
+</html>

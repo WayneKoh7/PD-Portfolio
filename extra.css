@@ -1,0 +1,343 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+:root {
+  --primary-color: #a855f7;
+  --primary-color-dark: #9333ea;
+  --secondary-color: #ca8a04;
+  --text-dark: #1f2937;
+  --text-light: #6b7280;
+  --extra-light: #faf5ff;
+  --max-width: 1200px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+#header {
+  width: 100%;
+  height: 18vh;
+  background-image: url(assets/img/background.mp4);
+  background-size: cover;
+  background-position: center;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  padding: 10px 10%;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.logo {
+  width: 140px;
+}
+
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 10px 20px;
+}
+
+nav ul li a {
+  color: var(--text-dark);
+  text-decoration: none;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+ul li a:hover {
+  border-top-color: var(--secondary-color);
+  border-bottom-color: var(--secondary-color);
+  color: var(--secondary-color);
+}
+
+ul li a {
+  padding: 0.5rem 1rem;
+  border: 2px solid transparent;
+  text-decoration: none;
+  font-weight: 500;
+  color: var(--text-dark);
+  transition: 0.3s;
+}
+
+ul li a:hover {
+  border-top-color: var(--secondary-color);
+  border-bottom-color: var(--secondary-color);
+  color: var(--secondary-color);
+}
+
+
+
+/* ---About Me--- */
+#about {
+  color: #515151;
+  margin-top: 10px;
+  margin-bottom: 20vh;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.about-col-1{
+  flex-basis: 35%;
+}
+
+.about-col-1 img{
+  width: 100%;
+  border-radius: 15px;
+}
+
+.about-col-2{
+  flex-basis: 60%;
+}
+
+.sub-title{
+  font-size: 60px;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.tab-titles{
+  display: flex;
+  margin: 20px 0 40px;
+}
+
+.tab-links{
+  margin-right: 50px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+}
+
+.tab-links:after {
+  content: '';
+  width: 0;
+  height: 3px;
+  background: #ca8a04;
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  transition: 0.5s;
+}
+
+.tab-links {
+  padding: 0.5rem 1rem;
+  border: 2px solid transparent;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.tab-links.active-link::after{
+  width: 100%;
+}
+
+.tab-contents ul li{
+  list-style: none;
+  margin: 10px 0;
+}
+
+.tab-contents ul li span{
+  color: #bd8c23;
+  font-size: 15px;
+}
+
+.tab-contents{
+  display: none;
+}
+
+.tab-contents.active-tab{
+  display: block;
+}
+
+
+
+
+/* Copyright Footer //To be Enhanced */
+.copyright{
+  width: 100%;
+  text-align: center;
+  padding: 25px 0;
+  background: #464646;
+  font-weight: 300;
+  margin-top: 20px;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  margin: 50px auto;
+  max-width: 450px;
+}
+
+.btn2 {
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  padding: 14px 20px;
+  outline: none;
+  border: 2px solid var(--primary-color);
+  border-radius: 6px;
+  transition: 0.3s;
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--primary-color);
+  width: fit-content;
+  box-sizing: border-box;
+  margin: 0 10px;
+}
+
+.btn2:hover {
+  background-color: var(--primary-color-dark);
+  color: #ffffff;
+}
+
+.btn {
+  display: block;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  padding: 14px 50px;
+  outline: none;
+  border: 2px solid var(--primary-color);
+  border-radius: 6px;
+  transition: 0.3s;
+  cursor: pointer;
+  width: fit-content;
+  margin: 50px auto;
+  text-decoration: none;
+  color: var(--primary-color); /* Set the text color */
+}
+
+.btn:hover {
+  background-color: var(--primary-color-dark);
+  color: #ffffff;
+}
+
+
+
+/* CSS For Smaller Screens */
+nav .fa-solid{
+  display: none;
+}
+
+
+@media only screen and (max-width: 600px){
+  
+
+  nav .fa-solid{
+    display: block;
+    font-size: 25px;
+  }
+
+  nav ul{
+    background: #6b7280;
+    position: fixed;
+    top: 0;
+    right: -200px;
+    width: 200px;
+    height: 100vh;
+    padding-top: 50px;
+    z-index: 2;
+    transition: right 0.5s;
+  }
+
+  nav ul li{
+    display: block;
+    margin: 25px;
+  }
+
+  nav ul .fa-solid{
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
+  }
+
+  /* About Me */
+  .sub-title{
+    font-size: 20px;
+  }
+  /* for the image */
+  .about-col-1, .about-col-2{
+    flex-basis: 100%;
+  }
+  /* space between image and text */
+  .about-col-1{
+    margin-bottom: 30px;
+  }
+
+  .about-col-2{
+    font-size:  12px;
+  }
+
+  .tab-links{
+    font-size: 11px;
+    margin-right: 0px;
+    margin-left: -15px;
+  }
+
+  .tab-links:after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ca8a04;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+  }
+  
+  .tab-links {
+    padding: 0.3rem 0.9rem;
+    border: 2px solid transparent;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+  }
+  
+  .tab-links.active-link::after{
+    width: 90%;
+  }
+
+  .contact-left, .contact-right{
+    flex-basis: 100%;
+  }
+
+  .copyright{
+    font-size: 14px;
+  }
+  
+  .about-col-2 .tab-contents .container .skill-box{
+    width: 100%;
+    margin: 25px 0;
+  }
+
+  .skill-box .title{
+    display: block;
+    font-size: 12px;
+    font-weight: 300;
+    color: #333;
+  }
+}
+
